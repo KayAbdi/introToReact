@@ -22,3 +22,18 @@ Advantages	Disadvantages	Examples
 Framework	You can develop an application quickly without making decisions upfront.	You have less flexibility in how your application operates and what tools you can use.	Angular, Next.js, Redwood.js, Vue
 Library	You have complete control over the codebase and the flexibility to use several packages and tools within your application.	You have to create the application manually and make several decisions, which will take longer.	React
 In this course, you will learn how to use the React library and how to make decisions about the development of your application. After you learn how to leverage the library, if you want to add the framework functionality, you can use frameworks that are based on React (e.g., Next.js (Links to an external site.), Gatsby (Links to an external site.), and Redwood.js (Links to an external site.)).
+
+# What is JSX?
+JSX  (Links to an external site.)is a JavaScript syntax extension that allows HTML-like code to be written in JavaScript. With JSX, you can put HTML-like syntax inside of JavaScript code to render an HTML element and give it functionality.
+
+Unlike Angular and Vue, which use HTML templates, React uses JSX to combine the UI code and logic in one place.
+
+Introduction To JSX Syntax
+Review the example of JSX below:
+
+const title = 'Hello World';
+
+const element = <h1>{title}</h1>;
+Notice how the <h1> elements and reference to the title variable are assigned to the element variable. In this example of JSX, the HTML elements are assigned to a JavaScript variable.
+
+If the element variable was rendered by React, the web page would display the text “Hello World” in h1 (header) tags.
