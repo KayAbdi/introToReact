@@ -37,3 +37,19 @@ const element = <h1>{title}</h1>;
 Notice how the <h1> elements and reference to the title variable are assigned to the element variable. In this example of JSX, the HTML elements are assigned to a JavaScript variable.
 
 If the element variable was rendered by React, the web page would display the text “Hello World” in h1 (header) tags.
+  
+# ReactDOM 
+ReactDOM is a shadow DOM that synchronizes with the browser DOM. ReactDOM ensures that the entire page does not have to re-render when an individual component is updated.
+
+In order to run the code shown in this video, please use the starter files within the “Introduction to JSX” folder, which you can download from the Introduction and Instructions page.
+
+Additionally, you will need to have node installed  (Links to an external site.)so you can run the following command to install http-server:
+
+npm install -g http-server
+
+After this installs, you may need to restart your terminal in order to run the http-server command from the directory that houses the starter files.
+
+Note: If you are using Windows and you get the following message when running the http-server command (execution of scripts is disabled on this system), please reference this link (Links to an external site.) for a resolution. More specifically, you may need to run Set-ExecutionPolicy RemoteSigned from an administrator terminal to successfully run the http-server command.
+
+
+
