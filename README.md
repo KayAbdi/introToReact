@@ -51,5 +51,69 @@ After this installs, you may need to restart your terminal in order to run the h
 
 Note: If you are using Windows and you get the following message when running the http-server command (execution of scripts is disabled on this system), please reference this link (Links to an external site.) for a resolution. More specifically, you may need to run Set-ExecutionPolicy RemoteSigned from an administrator terminal to successfully run the http-server command.
 
+# State
+State
+When data on the web changes, such as when a user selects a button, React updates the React DOM. The automatic management of data on a web page through React is called state.
 
+Suppose that you stored a list of users in a JavaScript object, and the users are displayed as a table on a web page. In this example, the user data is the state.
+
+User ID
+
+Username
+
+1
+
+peter.parker
+
+2
+
+bruce.wayne
+
+3
+
+tchalla
+
+4
+
+diana.prince
+
+If you created this object with React, the user data table would be a component. This userComponent would manage its own state, hence updating the list of users when changes are made. React is declarative, which means that when the state (or data) is changed, React updates the interface accordingly. 
+
+User ID
+
+Username
+
+1
+
+peter.parker
+
+2
+
+bruce.wayne
+
+3
+
+tchalla
+
+4
+
+diana.prince
+
+5
+
+dr.strange
+
+State Example
+Imagine a component that acts as a counter. The counter starts at zero, and the user selects a button to increment the counter by one.
+
+1.PNG
+
+Since the counter is a component, which can be reused, there can be multiple instances of the counter on one web page. Using what you know about state and components, what would happen if there were two counters on the page and the user selected one of the buttons to increment the counter?
+
+If you predicted that only the counter instance that the user selected would increment, you are correct. The component’s state is internal, and multiple instances of the component do not share the same state. 
+
+2.PNG
+
+
+To enforce the same state between multiple components or  instances of components, there are two common patterns in React: lifting the state to a common parent component or a centralized state store such as Redux that can be made available to any component. You will learn more about this in Week 16. 
 
